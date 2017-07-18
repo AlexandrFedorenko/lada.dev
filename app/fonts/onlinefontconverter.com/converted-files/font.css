@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'PFBeauSansPro-SemiBold';
+  src: url('PFBeauSansPro-SemiBold.woff') format('woff'),
+       url('PFBeauSansPro-SemiBold.ttf') format('truetype'),
+       url('PFBeauSansPro-SemiBold.svg#PFBeauSansPro-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pfbeausanspro-sebold';
+  src: url('pfbeausanspro-sebold.eot');
+  src: url('pfbeausanspro-sebold.woff2') format('woff2'),
+       url('pfbeausanspro-sebold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
