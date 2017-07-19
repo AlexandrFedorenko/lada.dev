@@ -1,0 +1,188 @@
+.mainSlider{
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .slidContent{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 220px;
+    top: 160px;
+    z-index: 9;
+  }
+
+  .slidContent__h1{
+    color:$textWhite;
+    font-family: $open;
+    font-size: $f62;
+    line-height: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .slidContent__slog{
+    @extend .slidContent__h1;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .slidContent__a{
+    color: $textWhite;
+    font-family: $open;
+    font-size: $f15;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 1px -9px 18px rgba(13, 15, 19, 0.43);
+    background-color: #fb1424;
+    padding: 14px 22px;
+    border:1px solid transparent;
+    transition: color .2s, border .2s, background-color .2s ;
+    &:hover,
+    &:active,
+    &:focus{
+      text-decoration: none;
+      color:$textColorBl;
+      border: 1px solid  $black;
+      background: white;
+    }
+  }
+}
+.slick-dots{
+  padding: 35px 0;
+  background: rgba(0,0,0,.6);
+  bottom: 0;
+}
+
+.slick-dots li button::before{
+  font-size: 12px;
+  color: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+  opacity: 1;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+}
+.slick-dots li.slick-active button::before{
+  opacity: 1;
+  color: transparent;
+  background: white;
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 11px;
+  height: 11px;
+}
+.slick-arrow{
+  position: absolute;
+  bottom: 28px;
+  left: 220px;
+  z-index: 9;
+  cursor: pointer;
+}
+.next, .prev
+{ display: inline-block; background: url('../img/arrows.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.prev{
+  background-position: -3px -40px;
+  width: 37px;
+  height: 37px;
+}
+.next{
+  background-position: -3px -0px;
+  width: 37px;
+  height: 37px;
+  left: 270px;
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+
+//media
+
+@media screen and (max-width: 1550px){
+  .mainSlider .slidContent{
+    top: 120px;
+  }
+  .mainSlider .slidContent__h1, .mainSlider .slidContent__slog{
+    font-size: 52px;
+    line-height: 50px;
+  }
+  .mainSlider .slidContent__slog{
+    margin-bottom: 35px;
+    padding: 0;
+  }
+  .slick-dots{
+    padding: 25px 0;
+  }
+  .slick-arrow{
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 1260px){
+
+  .mainSlider .slidContent{
+    top: 70px;
+    margin-left: 50px;
+  }
+  .slick-arrow{
+    left: 50px;
+  }
+  .next{
+    left: 100px;
+  }
+  .mainSlider .slidContent__h1, .mainSlider .slidContent__slog, .mainSlider .slidContent__slog {
+    font-size: 34px;
+    line-height: 32px;
+  }
+
+}
+@media screen and (max-width: 992px){
+  .mainSlider .slidContent__h1, .mainSlider .slidContent__slog, .mainSlider .slidContent__slog, .mainSlider .slidContent__slog {
+    font-size: 22px;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+  .mainSlider .slidContent__a{
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+  .mainSlider .slidContent__slog{
+    margin-bottom: 10px;
+  }
+
+}
+@media screen and (max-width: 768px){
+  .mainSlider .slidContent{
+    top: 15px;
+  }
+  .slick-arrow {
+    bottom: 6px;
+  }
+  .slick-dots {
+    padding: 12px 0;
+  }
+
+}
+@media screen and (max-width: 555px){
+  .slick-dots {
+    padding: 0;
+    background: none;
+  }
+  .mainSlider .slidContent {
+    top: 10px;
+    margin-left: 20px;
+  }
+  .mainSlider .slidContent__h1, .mainSlider .slidContent__slog{
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 5px;
+  }
+  .mainSlider .slidContent__a {
+    font-size: 10px;
+    padding: 6px 6px;
+  }
+
+
+}
+

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>
+<html lang="ru" class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
@@ -29,18 +32,19 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <header>
     <div class="maskHeader"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 logoPosition">
                 <div class="logo">
                     <a href="#"><img src="img/logo.png" alt="logo" class="logo__logo"></a>
-                    <div class="logo__dopBg"></div>
                 </div>
+                <div class="logo__dopBg"></div>
             </div>
             <div class="col-md-5">
                 <nav>
@@ -52,11 +56,94 @@
                 </nav>
             </div>
             <div class="col-md-4">
-                
+                <div class="hedPhone">
+                    <div class="hedPhone__wrap">
+                        <div class="hedPhone__leftImg">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="hedPhone__number">
+                            <a class="hedPhone__phone" href="tel:88552705166">8(8552) 70-51-66</a>
+                            <p class="hedPhone__textNumber">наш контактный телефон</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
+<div class="container container--pos">
+    <div class="form">
+        <div class="form__wrap">
+            <form action="#" method="get" class="searchForm">
+                <button class="searchSubmit"><i class="fa fa-search" aria-hidden="true"></i>ПОИСК</button>
+                <input type="search" class="inpSearch" placeholder="Введите название детали...">
+                <div class="form__mask"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="mainSlider">
+        <div>
+            <div class="slidContent">
+                <div class="slidConWrap">
+                    <h1 class="slidContent__h1">
+                        На запчасти <br>
+                        LADA
+                    </h1>
+                    <p class="slidContent__slog">скидки до 30%</p>
+                    <a href="#" class="slidContent__a">узнать больше</a>
+                </div>
+            </div>
+            <div class="sliderMasck"></div>
+            <img src="img/slide.png" alt="slide 1">
+        </div>
+        <div>
+            <div class="slidContent">
+                <div class="slidConWrap">
+                    <h1 class="slidContent__h1">
+                        На запчасти <br>
+                        LADA
+                    </h1>
+                    <p class="slidContent__slog">скидки до 30%</p>
+                    <a href="#" class="slidContent__a">узнать больше</a>
+                </div>
+            </div>
+            <div class="sliderMasck"></div>
+            <img src="img/slide.png" alt="slide 1">
+        </div>
+        <div>
+            <div class="slidContent">
+                <div class="slidConWrap">
+                    <h1 class="slidContent__h1">
+                        На запчасти <br>
+                        LADA
+                    </h1>
+                    <p class="slidContent__slog">скидки до 30%</p>
+                    <a href="#" class="slidContent__a">узнать больше</a>
+                </div>
+            </div>
+            <div class="sliderMasck"></div>
+            <img src="img/slide.png" alt="slide 1">
+        </div>
+        <div>
+            <div class="slidContent">
+                <div class="slidConWrap">
+                    <h1 class="slidContent__h1">
+                        На запчасти <br>
+                        LADA
+                    </h1>
+                    <p class="slidContent__slog">скидки до 30%</p>
+                    <a href="#" class="slidContent__a">узнать больше</a>
+                </div>
+            </div>
+            <div class="sliderMasck"></div>
+            <img src="img/slide.png" alt="slide 1">
+        </div>
+    </div>
+</section>
 
 <div class="hidden"></div>
 
@@ -74,6 +161,7 @@
 
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/crros-browser/cross-browser.js"></script>
+<script src="libs/slick-carousel/slick/slick.js"></script>
 <script src="js/custom.js"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->

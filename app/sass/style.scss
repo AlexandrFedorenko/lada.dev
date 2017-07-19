@@ -1,27 +1,32 @@
 @import "libs";
 @import "variables";
-@import "../libs/font-awesome-4.7.0/scss/font-awesome";
+@import "bootstrap_grid";
+@import "../libs/font-awesome-4.7.0/css/font-awesome.css";
 
 *::-webkit-input-placeholder{
   color: #666;
+  font-family: $reg;
   opacity: 1;
 }
 
 
 *:-moz-placeholder{
   color: #666;
+  font-family: $reg;
   opacity: 1;
 }
 
 
 *::-moz-placeholder{
   color: #666;
+  font-family: $reg;
   opacity: 1;
 }
 
 
 *:-ms-input-placeholder{
   color: #666;
+  font-family: $reg;
   opacity: 1;
 }
 .hidden{

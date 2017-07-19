@@ -1,1 +1,243 @@
 @import "../variables";
+
+header{
+  border-bottom: 2.5px solid $borderColorGr;
+}
+.logo__logo{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 179px;
+  margin: 0 auto;
+  display: block;
+}
+.logo__dopBg{
+  background: url("../img/pod-logo.png")no-repeat;
+  width: 316px;
+  height: 54px;
+  position: absolute;
+  bottom: -135px;
+  z-index: 2;
+  left: -18px;
+  transform: rotate(-0.2deg);
+}
+.logoPosition{
+  position: relative;
+  margin-top: 12px;
+}
+.logo{
+  position: absolute;
+  left: 50px;
+}
+.menu{
+  padding-left: 0;
+  margin: 40px 0 34px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  li{
+    a{
+      color: $textColorBl;
+      font-family:$open;
+      font-size: $f16;
+      font-weight: 400;
+      text-transform: uppercase;
+      transition: color .2s;
+      &:hover,
+      &:active,
+      &:focus{
+        color:$textHover;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.hedPhone__wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 10px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+.hedPhone__phone{
+  color: $textColorBl;
+  font-family: $open;
+  font-size: $f26;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color .2s;
+  &:hover,
+  &:active,
+  &:focus{
+    color:$textHover;
+    text-decoration: none;
+  }
+}
+.hedPhone__textNumber{
+  @extend .hedPhone__phone;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  &:hover,
+  &:active,
+  &:focus{
+    color:$textColorBl;
+    text-decoration: none;
+  }
+}
+.hedPhone__leftImg{
+  i{
+    font-size: 26px;
+    border: 2px solid $colorIcons;
+    padding: 4px 8px;
+    border-radius: 100px;
+    color:$colorIcons;
+    margin-top: 12px;
+    margin-right: 8px;
+  }
+}
+
+// search
+.form{
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__wrap{
+  position: absolute;
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+  padding-bottom: 9px;
+  border-radius: 0 0 12px 180px;
+  z-index: 1;
+}
+.searchForm{
+  position: relative;
+}
+.form__mask{
+  position: absolute;
+  background: url("../img/search-bg.png")no-repeat center right;
+  width: 48px;
+  height: 48px;
+  right: -45px;
+  top: 0;
+}
+
+
+.searchSubmit{
+  outline: none;
+  color: $textWhite;
+  font-family: $bold;
+  font-size: $f12;
+  padding: 4px 15px;
+  background: $colorIcons;
+  border: 1px solid $transp;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: background .2s, color .2s, border .2s ;
+  i{
+    padding-right: 7px;
+    font-size: 12px;
+  }
+  &:hover,
+  &:active,
+  &:focus{
+    background: $transp;
+    border:1px solid $black;
+    color: $textColorBl;
+  }
+}
+.inpSearch{
+  outline: none;
+  max-width: 400px;
+  padding-left: 12px;
+  width: 100%;
+  border: none;
+  border-left:1px solid #a1a8bd;
+  height: 26px;
+  font-family:$reg;
+  font-size: 15px;
+}
+
+//media
+
+@media screen and (max-width: 1200px){
+  .form__wrap{
+    margin-left: 9%;
+  }
+}
+@media screen and (max-width: 992px){
+  .logo{
+    position: static;
+  }
+  .logo__dopBg,
+  .form__mask{
+    display: none;
+  }
+  .hedPhone__wrap{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .form__wrap{
+    border-radius: 0 0 180px 180px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .form__wrap{
+    border-radius: 0;
+    max-width: 100%;
+    left: 0;
+    position: static;
+  }
+  .form{
+    max-width: 100%;
+  }
+  .searchForm{
+    text-align: center;
+  }
+  .inpSearch{
+    max-width: 280px;
+  }
+  .menu li {
+    flex-basis: 150px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 490px){
+  .menu{
+    flex-direction: column;
+    margin: 15px 0;
+    li{
+      flex-basis: 30px;
+    }
+  }
+  .searchSubmit{
+    margin-left: 0;
+    padding: 4px 6px;
+    margin-right: 0;
+  }
+  .hedPhone__phone {
+    font-size: 20px;
+  }
+  .hedPhone__textNumber{
+    font-size: 14px;
+  }
+  .hedPhone__leftImg i{
+    font-size: 20px;
+    padding: 4px 6px;
+  }
+  .inpSearch {
+    max-width: 195px;
+    margin-top: 10px;
+    border: none;
+  }
+
+}
+
